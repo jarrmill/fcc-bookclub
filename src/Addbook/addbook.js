@@ -28,12 +28,7 @@ class AddBook extends Component {
     console.log("button clicked");
     let formData = new FormData();
     const file = this.filesInput.files[0];
-    /*for (var key in files) {
-      // check if this is a file:
-      if (files.hasOwnProperty(key) && files[key] instanceof File){
-        formData.append(key, files[key]);
-      }
-    }*/
+
     formData.append("title", event.target.title.value);
     formData.append("author", event.target.author.value);
     formData.append("desc", event.target.desc.value);
