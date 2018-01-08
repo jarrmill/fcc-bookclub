@@ -39,7 +39,7 @@ class AddBook extends Component {
       console.log(key);
     }
     const { getAccessToken } = this.props.auth;
-    superagent.post('https://fcc-bookclub-server.herokuapp.com/bookclub')
+    superagent.post('https://fcc-bookclub-server.herokuapp.com/bookclub/addbook')
     .send(formData)
     .set('Authorization', `Bearer ${getAccessToken()}`)
     .end((err, response) => {
