@@ -6,8 +6,8 @@ class OfferPanel extends React.Component{
   //http://localhost:3091/${this.props.book.file.filename
 
   render(){
-    const off_path = `http://localhost:3091/${this.props.offered.file.filename}`
-    const req_path = `http://localhost:3091/${this.props.requested.file.filename}`
+    const off_path = `https://fcc-bookclub-server.herokuapp.com/${this.props.offered.file.filename}`
+    const req_path = `https://fcc-bookclub-server.herokuapp.com/${this.props.requested.file.filename}`
     const isOdd = (this.props.index % 2 === 0);
     return (
       <OfferContainer key={this.props.index} isOdd={isOdd}>

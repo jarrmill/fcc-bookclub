@@ -6,7 +6,7 @@ class BookTile extends React.Component{
   render(){
     return (
       <Tile key={this.props.index} style={{
-        backgroundImage: `url(http://localhost:3091/${this.props.book.file.filename})`,
+        backgroundImage: `url(https://fcc-bookclub-server.herokuapp.com/${this.props.book.file.filename})`,
         backgroundSize: 'cover',
       }}>
         <TextContainer>

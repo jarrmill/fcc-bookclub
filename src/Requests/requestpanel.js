@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 class RequestPanel extends React.Component{
   render(){
     console.log("Request: ", this.props.request);
-    const off_path = `http://localhost:3091/${this.props.offered.file.filename}`
-    const req_path = `http://localhost:3091/${this.props.requested.file.filename}`
+    const off_path = `https://fcc-bookclub-server.herokuapp.com/${this.props.offered.file.filename}`
+    const req_path = `https://fcc-bookclub-server.herokuapp.com/${this.props.requested.file.filename}`
     const isOdd = (this.props.index % 2 === 0);
 
     return (
